@@ -1,0 +1,234 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: opacity 0.3s ease-in;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 100vh;
+
+  background-color: #282828;
+  color: white;
+
+  transition: background-color 0.6s ease-in-out 0.3s;
+}
+
+.won {
+  background-color: green;
+}
+
+.lost {
+  background-color: darkred;
+}
+
+#game-zone {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+#game-zone p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+}
+
+#game-zone .buttons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 70vw;
+}
+
+.game-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 20vh;
+  height: 20vh;
+
+  border: 4px white solid;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0.8em 0 white, 0 0 1.6em 0 white;
+}
+
+.game-button img {
+  width: 10vh;
+  filter: invert(100%) sepia(100%) saturate(29%) hue-rotate(237deg) brightness(105%) contrast(103%)
+    drop-shadow(0px 0px 3px white);
+}
+
+#played {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 65vw;
+
+  opacity: 0;
+}
+
+#played p {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#played p:first-child {
+  margin-right: 5vw;
+}
+
+#played p:last-child {
+  margin-left: 5vw;
+}
+
+.comparator {
+  width: 5vh;
+  height: 5vh;
+  border-top: 3px white solid;
+}
+
+.left {
+  border-left: 3px white solid;
+  transform: rotateZ(-45deg);
+}
+
+.right {
+  border-right: 3px white solid;
+  transform: rotateZ(45deg);
+}
+
+.equal {
+  border-bottom: 3px white solid;
+  height: 2vh;
+}
+
+#result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+
+  opacity: 0;
+}
+
+#settings div {
+  position: absolute;
+  bottom: 2vh;
+  left: 2vw;
+
+  background: none;
+  border-radius: 10px;
+
+  text-transform: uppercase;
+  font-size: 30px;
+  color: lightskyblue;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+input[type="button"] {
+  position: absolute;
+  bottom: 2vh;
+  right: 2vw;
+  width: 200px;
+  height: 50px;
+
+  background: none;
+  border: 4px white solid;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0.8em 0 white, 0 0 1.6em 0 white;
+
+  text-transform: uppercase;
+  font-size: 30px;
+  color: white;
+
+  opacity: 0;
+}
+
+/* Switch */
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
