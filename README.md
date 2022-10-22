@@ -16,21 +16,21 @@ Finally, you can activate the impossible mode at the bottom left of the page... 
 ## Images
 
 <figure style="text-align: center">
-  <img src="md-imgs/base.png"/>
   <figcaption>Home page</figcaption>
+  <img src="md-imgs/base.png"/>
 </figure>
 
 <figure style="text-align: center">
-  <img src="md-imgs/equal.png"/>
   <figcaption>No one have won, but no one have lost !</figcaption>
+  <img src="md-imgs/equal.png"/>
 </figure>
 
 <figure style="text-align: center">
-  <img src="md-imgs/win.png"/>
   <figcaption>User have won !</figcaption>
+  <img src="md-imgs/win.png"/>
 </figure>
 
 <figure style="text-align: center">
-  <img src="md-imgs/lost.png"/>
   <figcaption>User have lost !</figcaption>
+  <img src="md-imgs/lost.png"/>
 </figure>
